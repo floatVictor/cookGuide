@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cook Guide</title>
+
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+  <link rel="stylesheet" href="../main.css">
+
+</head>
+<h1>Nouvelle recette</h1>
+<body>
+    <form class="form" action="ajouterRecette.php" method="post" >
+        <br>
+            <label>Recette :</label>
+            <input type="text"  name="nom" required
+                    minlength="4" maxlength="30" size="20" value="qcqsxqsxqsx"> 
+                    
+            <label>Catégorie :</label>
+            <select name="catégorie" required value="3">
+                <option value="">--Please choose an option--</option>
+                <option value="3">Entrée</option>
+                <option value="1">Plat</option>
+                <option value="2">Dessert</option>
+                <option value="4">Autre</option>
+            </select>
+            <br/>
+            <label>Temps de conception :</label>
+            <input type="time" name="durée" value="18:30" required>
+
+            <label>Prix de la recette (€):</label>
+            <input type="float" name="prix" value="0" required value="3">
+
+            <label>Your pseudonyme:</label>
+            <input type="text" name="user" value="Brigitte" required >
+            <p href="" class="add">Ajouter un ingrédient</p>
+        </br>
+        <div class="ingredients"></div>
+        <br/>
+        <input type="submit" value="Envoyer le formulaire">
+    </form>
+    <script src="../main.js"></script>
+</body>

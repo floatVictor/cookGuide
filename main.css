@@ -1,0 +1,8 @@
+.add {
+	color: blue;
+	cursor: pointer;
+}
+
+.add:hover {
+	color: cornflowerblue;
+}
